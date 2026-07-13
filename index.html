@@ -1,78 +1,224 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-      <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-        <head>
-          <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-          <title>Gilles Barthe</title>
-        </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilles Barthe</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.5;
+    }
 
-        <body>
+    a { color: #0645ad; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-<h1>Gilles Barthe</h1>
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 40px;
+      padding: 0 20px;
+    }
 
-<img src="Gilles_Barthe.jpeg" style="padding-right:10px; padding-bottom:10px; float:left;" alt=''; height=200>
+    .sidebar img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
 
-	  <p> I am scientific director at <a
-	  href="http://www.mpi-sp.org/">Max Planck Institute for
-	  Security and Privacy</a>, Bochum, Germany and (part-time)
-	  research professor at <a
-	  href="http://software.imdea.org/">IMDEA Software
-	  Institute</a>, Madrid, Spain. My research interests include
-	  programming languages and program verification, security,
-	  privacy, and cryptography.  </p>
+    .name {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
+    .sidebar p {
+      margin: 6px 0;
+      font-size: 14px;
+    }
 
-	  <!-- <p>  I received a Ph.D. in -->
-          <!--    Mathematics from the University of Manchester, UK, in -->
-          <!--    1993, and an Habilitation à diriger les recherches in -->
-          <!--    Computer Science from the University of Nice, France, in -->
-          <!--    2004.</p> -->
+    .main h2 {
+      font-size: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+      margin-top: 25px;
+    }
 
-<!-- <br><br><br>	   -->
+    ul { padding-left: 20px; }
 
-<!-- <h3>Open positions</h3> -->
+    .news li { margin-bottom: 6px; }
 
-<!-- <div> -->
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #555;
+    }
+  </style>
+</head>
 
- 
-<!--  <p>I have openings for Ph.D. and post-docs with a broad interest in -->
-<!-- the broad areas of security, privacy, programming languages, and -->
-<!-- program verification. Contact me if interested. <b> Please include -->
-<!-- concrete information about your background and your research -->
-<!-- interests. Generic messages will be ignored</b>.</p> -->
+<body>
 
-<!-- <p> You can also apply for positions at the <a -->
-<!--   href="https://www.cis.mpg.de/">CS Max Planck Institutes</a>. In -->
-<!--   particular, consider applying to the <a -->
-<!--   href="https://www.cis.mpg.de/cs-max-planck/"> doctoral programme</a> -->
-<!--   and the <a href="https://www.cis.mpg.de/internships/">internship -->
-<!--   programme</a>.</p> -->
+<div class="container">
 
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <img src="https://gbarthe.github.io/Gilles_Barthe.jpeg" alt="Profile photo">
 
+    <div class="name">Gilles Barthe</div>
 
-<!-- </div> -->
+    <p><a href="http://www.mpi-sp.org/">MPI-SP</a></p>
+    <p><a href="http://software.imdea.org/">IMDEA Software Institute</a></p>
 
-<h3>Projects</h3>
-<div>
-	  <a href="https://formosa-crypto.org/">Formosa</a>
-</div>
+    <!-- <p style="margin-top:10px;"> -->
+    <!--   <a href="https://gbarthe.github.io/">Website</a><br> -->
+    <!-- </p> -->
 
+    <p style="margin-top:10px;">
+      <a href="https://scholar.google.com/citations?user=kAkmfWEAAAAJ&hl=en">Google Scholar</a><br>
+      <a href="https://dblp.org/pid/b/GBarthe.html">DBLP</a>
+    </p>
+  </div>
 
-	  
-<h3>Publications</h3>
-<div>
-<a href="https://dblp.org/pid/b/GBarthe.html">DBLP</a>
-</div>
+  <!-- Main Content -->
+  <div class="main">
 
+    <p>
+      I am scientific director at
+      the <a href="http://www.mpi-sp.org/">Max Planck Institute for
+      Security and Privacy (MPI-SP)</a> in Bochum, Germany, and a
+      part-time research professor
+      at <a href="http://software.imdea.org/">IMDEA Software
+      Institute</a> in Madrid, Spain.
+    </p>
 
+    <h2>Research</h2>
+     <p>
+      My research interests include:
+    <ul>
+      <li>Computer security, cryptography, differential privacy</li>
+      <li>Programming languages and formal verification</li>
+      <li>Logic and foundations of computer science</li>
+    </ul>
+     </p>
 
-<h3>Contact</h3>
-<div>
-  <p> Email: firstname.lastname@mpi-sp.org</p>
- <p> address: MPI-SP, Universitaetsstr. 140, 44799 Bochum, Germany<br>
-</p>    
+    <h2>Current projects</h2>
+    <ul>
+
+      <li>  <strong>EasyCrypt</strong>: 
+        <a href="https://easycrypt.info/">https://easycrypt.info/</a><br>
+        A toolset for reasoning about cryptographic constructions and proving their security.
+      </li>
+
+      <li>
+        <strong>Jasmin</strong>: 
+        <a href="https://jasmin-lang.org/">https://jasmin-lang.org/</a><br>
+        A language and toolchain for high-assurance, high-performance cryptographic implementations.
+      </li>
+
+      <li>
+        <strong>FORMOSA</strong>: 
+        <a href="https://formosa-crypto.org/">https://formosa-crypto.org/</a><br>
+        Formal methods for high-assurance cryptography. 
+      </li>
+    </ul>
+    
+<h2>Past projects (selection)</h2>
+    <ul>
+
+<li><strong>CertiCrypt</strong>: 
+  <a href="https://github.com/EasyCrypt/certicrypt">https://github.com/EasyCrypt/certicrypt</a>
+  <br>
+  Machine-checked cryptographic proofs.
+</li>  
+      
+    <li><strong>maskverif</strong>: 
+        <a href="https://cryptoexperts.com/maskverif/">https://cryptoexperts.com/maskverif/</a><br>
+       Language-based, compositional, verification of higher-order masking.
+       <!-- Maskverif is a fully automated tool to analyze security of -->
+       <!-- higher-order masked implementations. It supports the classic -->
+       <!-- notion of probing security as well as the compositional notion -->
+       <!-- of strong non-interference. The verification algorithm exploits -->
+       <!-- the equivalence between masking security and probabilistic -->
+       <!-- 	non-interference. -->
+      </li>
+    </ul>
+
+    
+    <h2>PhD Students</h2>
+    <h3>Current</h3>
+    <ul>
+      <li>Xingyu Xie — Automated proofs of security (since 2024)</li>
+      <li>Yingte Xu — Formal verification of Dirac notation (since 2023)</li>
+      <li>Santiago Olmos-Arranz — Securing the Jasmin compiler (since 2022)</li>
+    </ul>
+
+    <h3>Alumni</h3>
+    <ul>
+      <li>Miguel Quaresma — High-Assurance Post-Quantum Cryptography (2026), co-advised with <a href="https://cryptojedi.org/peter/index.shtml">Peter Schwabe</a>. Currently Security and Cryptography Researcher and Engineer at Least Authority</li>
+      <li>Basavesh Ammanaghatta-Shivakumar — High-Assurance Protections of Crypto Software against Micro-Architectural Leakage (2024), co-advised with <a href="https://cryptojedi.org/peter/index.shtml">Peter Schwabe</a>. Incoming Assistant Professor at Washington State University</li>
+      <li>Marcel Fourn&eacute; — Human Factors in Open Source Security (2024), co-advised with <a href="https://cryptojedi.org/peter/index.shtml">Peter Schwabe</a>. Last affiliation: Paderborn University.</li>
+      <li>Alejandro Aguirre — Relational Verification of Higher-Order Effectful Programs (2021). Currently  assistant professor at Aarhus University</li>
+      <li>Miguel Ambrona — Automated analysis of cryptographic constructions (2018). Currently senior cryptography engineer at Input Output (IOG)</li>
+      <li>Juan Manuel Crespo — Automation and Modularity of Cryptographic Proofs in the Computational Model (2016). Currently Head of Connectivity Cybersecurity and Testing at Volkswagen China</li>
+      <li>Juan Diego Campo — Formally Verified Countermeasures Against Cache-Based Attacks in Virtualization Platforms (2015). Currently Assistant Professor at Universidad de la Rep&uacute;blica, Uruguay</li>
+      <li>Federico Olmedo — Approximate Relational Reasoning for Probabilistic Programs (2014). Currently Assistant Professor at the University of Chile</li>
+      <li>Santiago Zanella-B&eacute;guelin — Formal certification of game-based cryptographic proofs (2010). Currently Principal Researcher at Microsoft Research (Cambridge)</li>
+      <li>César Kunz — Proof Carrying Code architecture for expressive policies (2009). Currently Senior Researcher at Huawei (Dresden)</li>
+      <li>Mariela Pavlova — Specification and verification of Java bytecode (2007). Currently Security Certification Expert at Infineon</li>
+      <li>Tamara Rezk — Enforcing confidentiality policies of mobile code (2006). Currently Research Director at Inria</li>
+      <li>Sabrina Tarento — Machine-checked proofs of idealized models of cryptography (2006). Currently  High-school mathematics teacher</li>
+      <li>Maria João Frade — Constructor subtyping and type-based termination in typed lambda calculi (2004) . Currently Assistant Professor at the University of Minho / INESC TEC</li>
+      <li>Guillaume Dufay — Formal verification of the Java Card platform (2003). Currently Senior Security Manager at ProvenRun</li>
+      <li>Simão Sousa — Tools and techniques for the formal verification of the Java Card platform (2003). Currently Full Professor at the University of Algarve</li>
+    </ul>
+
+    <h2>Service (current)</h2>
+    <ul>
+      <li>Program committees: <a href="https://popl27.sigplan.org/">POPL 2027</a>, <a href="https://lics.siglog.org/">LICS 2027</a></li>
+      <li>Editorial boards: <a href="https://link.springer.com/journal/10817">Journal of Automated Reasoning</a></li>
+      <li>Steering committees: <a href="https://sites.google.com/uniurb.it/fosad">FOSAD</a></li>
+    </ul>
+
+  <h2>Awards</h2>
+    <ul>
+      <li>Honorary Doctor, Chalmers University, Sweden, 2024</li>
+      <li>Test-of-Time Awards (2024) <a href="https://doi.org/10.1109/CSFW.2004.1310735">Secure information flow by self-composition, CSF'04</a>)</li>
+      <li>Lucas Award (2026) <a href="https://doi.org/10.1007/978-3-642-21437-0_17">Relational Verification Using Product Programs, FM'11</a>)</li>
+      <li>Best Paper Awards: <a href="https://doi.org/10.1007/978-3-662-52993-5_9">FSE'16</a>, <a href="https://doi.org/10.1145/2442516.2442529">PPoPP'13</a>, <a href="https://doi.org/10.1007/978-3-642-22792-9_5">CRYPTO'11</a></li>
+      <li>Distinguished Paper Awards: <a href="https://doi.org/10.1145/3719027.3744814">CCS'25</a>, <a href="https://doi.org/10.1145/3658644.3670319">CCS'24</a>, <a href="https://doi.org/10.1109/SP46215.2023.10179418">S&amp;P'23</a>, <a href="https://dl.acm.org/doi/10.1145/3531130.3533327">LICS'22</a>, <a href="https://doi.org/10.1145/3434333">POPL'21</a>, <a href="https://doi.org/10.1109/CSF.2018.00031">CSF'18</a></li>
+    </ul>
+
+    <h2>Publications</h2>
+<p>
+      Selected publications are available <a href="https://gbarthe.github.io/selected.html"</a>. See full list on <a href="https://scholar.google.com/citations?user=kAkmfWEAAAAJ&hl=en">Google Scholar</a> or <a href="https://dblp.org/pid/b/GBarthe.html">DBLP</a>.
+    </p>
+    
+        <h2>Professional Experience</h2>
+    <ul>
+      <li>Founding and Scientific Director, MPI-SP (since 2018)</li>
+      <li>Research Professor, IMDEA Software Institute (since 2008,
+      now part-time)</li>
+      <li>Researcher/Research Director, INRIA Sophia-Antipolis (1999–2008)</li>
+      <li>Assistant Professor, Universidade do Minho (1998-1999)</li>
+    </ul>
+
+<h2>Eduction</h2>
+    <ul>
+      <li>Ph.D. in Mathematical Logic, University of Manchester, 1993</li>
+      <li>Maitrise in Pure Mathematics, University Paris XI, 1990</li>
+      <li>Licence in Pure  Mathematics, University Paris XI, 1989</li>
+    </ul>
+    
+  </div>
+
+  
+
 </div>
 
 </body>
-
 </html>
